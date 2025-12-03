@@ -45,9 +45,13 @@ export const getLongestQueuedJob = (pipelines) => {
 export const getAvgPipelineDuration = (pipelines) => {
   if (!pipelines.length) return 0
 
-  const total = pipelines.reduce((sum, p) => sum + (p.duration || 0), 0)
+  const completedPipelines = pipelines.filter((p) => p.duration !== null)
 
-  return Math.round(total / pipelines.length)
+  if (!completedPipelines.length) return 0
+
+  const total = completedPipelines.reduce((sum, p) => sum + p.duration, 0)
+
+  return Math.round(total / completedPipelines.length)
 }
 
 export const getPipelineSuccessRate = (pipelines) => {

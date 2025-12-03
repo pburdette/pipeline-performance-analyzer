@@ -1,33 +1,27 @@
 # Pipeline Performance Analyzer
 
-Analyze and visualize GitLab CI/CD pipeline performance metrics
+![CI](https://github.com/pburdette/pipeline-performance-analyzer/actions/workflows/ci.yml/badge.svg)
 
-## Project Setup
+Analyze and visualize your GitLab CI/CD pipeline performance with key metrics and trends.
+
+## Features
+
+- 📊 Pipeline duration trend chart
+- 📈 Key performance metrics
+- 🔐 Secure token authentication
+
+## Development
 
 ```sh
+# Install dependencies
 npm install
-```
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
+# Run tests
 npm run test:unit
-```
 
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
+# Run linting
 npm run lint
+
+# Build for production
+npm run build
 ```
