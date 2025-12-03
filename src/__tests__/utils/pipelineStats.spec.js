@@ -6,7 +6,7 @@ import {
   getFailedJobsCount,
   getPipelineSuccessRate,
 } from '@/utils/pipelineStats'
-import { mockPipelines } from './mockData'
+import { mockPipelines } from '../mockData'
 
 describe('Pipeline Stats Utils', () => {
   describe('getSlowestJob', () => {

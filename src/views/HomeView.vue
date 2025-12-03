@@ -103,7 +103,11 @@ export default {
         <h1 class="mb-3">Pipeline Performance Analyzer</h1>
         <p>Analyze the performance of your last <b>20 GitLab pipelines</b>.</p>
         <p class="mb-4">
-          <a href="https://github.com/yourusername/your-repo" target="_blank" rel="noopener">
+          <a
+            href="https://github.com/pburdette/pipeline-performance-analyzer"
+            target="_blank"
+            rel="noopener"
+          >
             Contribute or report issues
           </a>
         </p>

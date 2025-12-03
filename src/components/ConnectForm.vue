@@ -47,13 +47,13 @@ export default {
 
           <CFormInput
             v-model="token"
-            class="mb-3"
             type="password"
             label="Enter API Token"
             placeholder="Your API token"
+            text="Stored locally in your browser. Never sent to any server."
           />
 
-          <CButton type="submit" color="primary">Analyze</CButton>
+          <CButton type="submit" color="primary" class="mt-3">Analyze</CButton>
         </div>
       </CCol>
     </CRow>
