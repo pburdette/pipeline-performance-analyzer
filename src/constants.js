@@ -1,2 +1,2 @@
-export const GITLAB_PROVIDER = 'gitlab'
-export const GITHUB_PROVIDER = 'github'
+export const TOKEN_KEY = 'token'
+export const PROJECT_KEY = 'project'

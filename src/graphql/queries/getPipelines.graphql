@@ -1,0 +1,28 @@
+query getPipelines($fullPath: ID!) {
+  project(fullPath: $fullPath) {
+    name
+    webUrl
+    pipelines(first: 20) {
+      nodes {
+        id
+        status
+        createdAt
+        updatedAt
+        duration
+        detailedStatus {
+          group
+        }
+        jobs {
+          nodes {
+            id
+            name
+            status
+            duration
+            queuedDuration
+            webPath
+          }
+        }
+      }
+    }
+  }
+}
