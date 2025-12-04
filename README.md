@@ -10,6 +10,8 @@ Use the fully functional app here:
 
 [Open the Pipeline Performance Analyzer](https://pipeline-performance.netlify.app/)
 
+![Pipeline Performance Analyzer](./src/assets/screenshot.png)
+
 ## Features
 
 - 📊 Pipeline duration trend chart
