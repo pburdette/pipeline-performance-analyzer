@@ -101,7 +101,7 @@ export default {
     <CRow class="justify-content-center text-center">
       <CCol lg="8">
         <h1 class="mb-3">Pipeline Performance Analyzer</h1>
-        <p>Analyze the performance of your last <b>20 GitLab pipelines</b>.</p>
+        <p>Analyze the performance of your last <b>20 GitLab pipelines</b></p>
         <p class="mb-4">
           <a
             href="https://github.com/pburdette/pipeline-performance-analyzer"
@@ -111,11 +111,13 @@ export default {
             Contribute or report issues
           </a>
         </p>
-        <CButton v-if="showStats" color="secondary" @click="disconnect">Disconnect</CButton>
+        <CButton v-if="showStats" color="secondary" @click="disconnect">
+          <CIcon icon="cilExitToApp" class="me-2" /> Disconnect
+        </CButton>
       </CCol>
     </CRow>
 
-    <ConnectForm v-if="!isConfigured" class="mt-5" @analyze="analyzePipelines" />
+    <ConnectForm v-if="!isConfigured" class="mt-4" @analyze="analyzePipelines" />
 
     <CRow v-if="isLoading" class="justify-content-center my-5">
       <CCol class="text-center">
@@ -132,13 +134,19 @@ export default {
       </CRow>
       <CRow class="mt-1 mb-2 text-center">
         <CCol md="6">
-          <StatCard title="Failed jobs count" :value="failedJobsCount" suffix="failed jobs" />
+          <StatCard
+            title="Failed jobs count"
+            :value="failedJobsCount"
+            suffix="failed jobs"
+            icon="cilXCircle"
+          />
         </CCol>
         <CCol md="6">
           <StatCard
             title="Pipeline success rate"
             :value="pipelineSuccessRate"
             suffix="success rate"
+            icon="cilCheckCircle"
           />
         </CCol>
       </CRow>
@@ -151,6 +159,7 @@ export default {
             :value="slowestJob.duration"
             :url="slowestJob.url"
             suffix="seconds"
+            icon="cilAvTimer"
           />
         </CCol>
         <CCol md="4">
@@ -160,10 +169,16 @@ export default {
             :value="longestQueuedJob.queuedDuration"
             :url="longestQueuedJob.url"
             suffix="seconds"
+            icon="cilClock"
           />
         </CCol>
         <CCol md="4">
-          <StatCard title="Avg Pipeline Duration" :value="avgDuration" suffix="seconds" />
+          <StatCard
+            title="Avg Pipeline Duration"
+            :value="avgDuration"
+            suffix="seconds"
+            icon="cilChartLine"
+          />
         </CCol>
       </CRow>
     </div>

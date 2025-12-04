@@ -51,9 +51,12 @@ export default {
             label="Enter API Token"
             placeholder="Your API token"
             text="Stored locally in your browser. Never sent to any server."
+            required
           />
 
-          <CButton type="submit" color="primary" class="mt-3">Analyze</CButton>
+          <CButton type="submit" color="primary" class="mt-3">
+            <CIcon icon="cilMediaPlay" class="me-2" /> Analyze Pipelines
+          </CButton>
         </div>
       </CCol>
     </CRow>
