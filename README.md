@@ -4,6 +4,12 @@
 
 Analyze and visualize your GitLab CI/CD pipeline performance with key metrics and trends.
 
+## Live App
+
+Use the fully functional app here:
+
+[Open the Pipeline Performance Analyzer](https://pipeline-performance.netlify.app/)
+
 ## Features
 
 - 📊 Pipeline duration trend chart
