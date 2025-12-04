@@ -2,7 +2,7 @@ query getPipelines($fullPath: ID!) {
   project(fullPath: $fullPath) {
     name
     webUrl
-    pipelines(first: 20) {
+    pipelines(first: 20, scope: FINISHED) {
       nodes {
         id
         status

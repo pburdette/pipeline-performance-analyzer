@@ -101,7 +101,7 @@ export default {
     <CRow class="justify-content-center text-center">
       <CCol lg="8">
         <h1 class="mb-3">Pipeline Performance Analyzer</h1>
-        <p>Analyze the performance of your last <b>20 GitLab pipelines</b></p>
+        <p>Analyze the performance of your last <b>20 finished GitLab pipelines</b></p>
         <p class="mb-4">
           <a
             href="https://github.com/pburdette/pipeline-performance-analyzer"
